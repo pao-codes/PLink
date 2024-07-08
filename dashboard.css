@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Signika;
+}
+body {
+  background-color: #FFFFFE;
+}
+@font-face {
+  font-family: Signika;
+  src: url(assets/fonts/SignikaNegative-Regular.ttf);
+}
+/* Header */
+header {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  top: 0;
+  z-index: 99;
+}
+.icon {
+  width: auto;
+  height: 40px;
+}
+.notif {
+  text-decoration: none;
+}
+.notif > svg {
+  stroke: #000;
+}
+/* Main */
+main {
+  position: fixed;
+  width: 100%;
+  max-width: 500px;
+  height: 100vh;
+  background-color: transparent;
+  transform: translateX(-50%);
+  left: 50%;
+  padding: 70px 10px;
+  overflow: scroll;
+  z-index: 98;
+}
+.card {
+  width: 100%;
+  height: 300px;
+  border: 1px solid;
+}
+/* Nav */
+nav {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background-color: #FFFFFE;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 38px, rgba(0, 0, 0, 0.22) 0px 0px 12px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  bottom: 0px;
+  z-index: 99;
+}
+.navIcon {
+  text-decoration: none;
+  font-size: 15px;
+  color: #7E828B;
+  text-align: center;
+}
+.navIcon > label {
+  display: block;
+  margin: -8px auto;
+}
+.navIcon > svg {
+  stroke: #7E828B;
+}
+.active {
+  text-decoration: none;
+  font-size: 15px;
+  color: #5653FC;
+  text-align: center;
+}
+.active > label {
+  display: block;
+  margin: -8px auto;
+}
+.active > svg {
+  stroke: #5653FC;
+}
